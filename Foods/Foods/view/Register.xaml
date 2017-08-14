@@ -6,17 +6,17 @@
         <ScrollView>
             <StackLayout   Margin="30" VerticalOptions="Center" Spacing="10" >
 
-            <Image x:Name="logo"/>
+           
 
 
-            <Entry  x:Name="Cellphone"
-                Text="{Binding Cell}"
+            <Entry  x:Name="name"
+                
                 Placeholder="Name"
                 Keyboard="Numeric" />
 
             
 
-            <Entry  x:Name="Password" 
+            <Entry  x:Name="surname" 
                 Text=""
                 Placeholder="Surname" 
                      />
@@ -71,7 +71,8 @@
                 </Picker.Items>
             </Picker>
 
-
+
+
 
             <Button  x:Name="register"  Text="ENTER"
                

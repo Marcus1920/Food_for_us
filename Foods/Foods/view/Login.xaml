@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Foods.view.Login"
-             BackgroundImage="b1.png">
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout   Margin="30" VerticalOptions="Center" Spacing="10" >
 
@@ -16,12 +16,12 @@
             </Picker>
 
 
-            <Label  x:Name="Message"   Text="{Binding Message}"  TextColor="White"   ></Label>
+            <Label  x:Name="Message"   Text=""  TextColor="White"   ></Label>
 
-            <Entry  x:Name="Cellphone"
-                Text="{Binding Cell}"
+            <Entry  x:Name="email"
+                
                 Placeholder="Email"
-                Keyboard="Numeric" />
+                 />
 
 
 
