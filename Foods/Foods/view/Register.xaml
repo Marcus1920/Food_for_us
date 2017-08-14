@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foods.view.Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout   Margin="30" VerticalOptions="Center" Spacing="10" >
+
+            <Image x:Name="logo"/>
+
+
+            <Entry  x:Name="Cellphone"
+                Text="{Binding Cell}"
+                Placeholder="Name"
+                Keyboard="Numeric" />
+
+            
+
+            <Entry  x:Name="Password" 
+                Text=""
+                Placeholder="Surname" 
+                     />
+
+
+            <Entry  
+                Text=""
+                Placeholder="Identification number" 
+                     />
+
+
+            <Entry  x:Name="email" 
+                Text=""
+                Placeholder="Email:" 
+                     />
+
+
+            <Entry  
+                Text=""
+                Placeholder="Email:" 
+                     />
+
+
+            <Picker Title="Interests " BackgroundColor="White">
+                <Picker.Items>
+                    <x:String>Interests 1</x:String>
+                    <x:String>Interests 2</x:String>
+                    <x:String>Interests 3</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+            <Entry  
+                Text=""
+                Placeholder="Location:" 
+                     />
+
+
+            <Picker Title="Travel radius " BackgroundColor="White">
+                <Picker.Items>
+                    <x:String> 5  km </x:String>
+                    <x:String> 10 Km </x:String>
+                    <x:String> 20 Km</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker Title="Description of access " BackgroundColor="White">
+                <Picker.Items>
+                    <x:String>5  km</x:String>
+                    <x:String>10 Km</x:String>
+                    <x:String>20 Km</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+
+            <Button  x:Name="register"  Text="ENTER"
+               
+                     Clicked="Register_ClickedAsync"
+                 BackgroundColor="Gray"
+                 />
+
+
+        </StackLayout>
+            </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

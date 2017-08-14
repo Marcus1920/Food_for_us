@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foods.view.hometabs.hometabs"
+             Icon="ic_home.png">
+  <!--Pages can be added as references or inline-->
+    <ContentPage  Title="FOR SALE">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="  Item  for  sall  " />
+
+            </StackLayout>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+
+
+    <ContentPage  Title="SAVED">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text=" save  Item  " />
+
+            </StackLayout>
+        </ContentPage.Content>
+
+    </ContentPage>
+
+
+    <ContentPage  Title="HISTORY">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text=" History   --  " />
+
+            </StackLayout>
+        </ContentPage.Content>
+
+    </ContentPage>
+</TabbedPage>

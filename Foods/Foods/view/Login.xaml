@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foods.view.Login"
+             BackgroundImage="b1.png">
+    <ContentPage.Content>
+        <StackLayout   Margin="30" VerticalOptions="Center" Spacing="10" >
+
+
+            <Picker Title="Login as   " BackgroundColor="White">
+                <Picker.Items>
+                    <x:String>Buyer </x:String>
+                    <x:String>Seller</x:String>
+                    <x:String>Researcher</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+            <Label  x:Name="Message"   Text="{Binding Message}"  TextColor="White"   ></Label>
+
+            <Entry  x:Name="Cellphone"
+                Text="{Binding Cell}"
+                Placeholder="Email"
+                Keyboard="Numeric" />
+
+
+
+            <Entry  x:Name="Password" 
+                Text="{Binding Password}"
+                Placeholder="password" 
+                IsPassword="True" />
+
+
+
+
+            <Button  x:Name="login"  Text="Login"
+             
+                 Clicked="login_ClickedAsync"
+                 BackgroundColor="Gray"
+                 />
+            <Button x:Name="forgepassword" Text="Forget  password "
+              Clicked="forgepassword_Clicked"
+                  
+                 />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

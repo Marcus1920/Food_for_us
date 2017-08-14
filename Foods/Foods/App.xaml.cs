@@ -12,8 +12,8 @@ namespace Foods
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Foods.MainPage();
+            MainPage = new NavigationPage(new Foods.MainPage());
+         //   MainPage = new Foods.MainPage();
         }
 
         protected override void OnStart()
