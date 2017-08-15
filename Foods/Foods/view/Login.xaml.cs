@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Foods.View.hometabs;
 
 namespace Foods.view
 {
@@ -20,12 +21,14 @@ namespace Foods.view
 
         private void forgepassword_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Forgetpassword()); 
+            Navigation.PushModalAsync(new Forgetpassword());
         }
+   
 
-        private async Task login_ClickedAsync(object sender, EventArgs e)
+
+        private async Task login_Clicked_1Async(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Homepage());
+            await Navigation.PushAsync(new  Master());
         }
     }
 }
