@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Foods.view; 
+﻿using Foods.View.hometabs;
+using Foods.View.Sellers;
+using System;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Foods.View.hometabs;
 
 namespace Foods.view
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
+        private string _role;
+
         public Login()
         {
             InitializeComponent();
@@ -28,7 +26,16 @@ namespace Foods.view
 
         private async Task login_Clicked_1Async(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new  Master());
+            if (_role.Equals("Seller"))
+                await Navigation.PushModalAsync(new SellersMaster());
+
+            else
+                await Navigation.PushAsync(new  Master());
+        }
+
+        private void LoginAs_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            _role = LoginAs.Items[LoginAs.SelectedIndex];
         }
     }
 }

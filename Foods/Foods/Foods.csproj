@@ -91,6 +91,19 @@
     <Compile Include="View\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Sellers\SellersMaster.xaml.cs">
+      <DependentUpon>SellersMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sellers\SellersMasterDetail.xaml.cs">
+      <DependentUpon>SellersMasterDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sellers\SellersMasterMaster.xaml.cs">
+      <DependentUpon>SellersMasterMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sellers\SellersMasterMenuItem.cs" />
+    <Compile Include="View\Sellers\SellersTabbedPage.xaml.cs">
+      <DependentUpon>SellersTabbedPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\MainPage.xaml">
@@ -223,6 +236,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\hometabs\MasterDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\SellersTabbedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\SellersMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\SellersMasterMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\SellersMasterDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

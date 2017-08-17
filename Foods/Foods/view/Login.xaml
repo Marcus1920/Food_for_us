@@ -7,7 +7,7 @@
         <StackLayout   Margin="30" VerticalOptions="Center" Spacing="10" >
 
 
-            <Picker Title="Login as   " BackgroundColor="White">
+            <Picker Title="Login as   " BackgroundColor="White" x:Name="LoginAs" SelectedIndexChanged="LoginAs_OnSelectedIndexChanged">
                 <Picker.Items>
                     <x:String>Buyer </x:String>
                     <x:String>Seller</x:String>
