@@ -91,6 +91,9 @@
     <Compile Include="View\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Sellers\ProductList.xaml.cs">
+      <DependentUpon>ProductList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Sellers\SellersMaster.xaml.cs">
       <DependentUpon>SellersMaster.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,9 @@
     <Compile Include="View\Sellers\SellersMasterMenuItem.cs" />
     <Compile Include="View\Sellers\SellersTabbedPage.xaml.cs">
       <DependentUpon>SellersTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sellers\TransactionList.xaml.cs">
+      <DependentUpon>TransactionList.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +266,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Sellers\SellersMasterDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\ProductList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Sellers\TransactionList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
