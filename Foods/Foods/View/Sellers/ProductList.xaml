@@ -7,8 +7,38 @@
         <ListView x:Name="ProductsListView"
                   HasUnevenRows="True"
                   IsPullToRefreshEnabled="True"
-                  Refreshing="ProductsListView_OnRefreshing">
-            
+                  Refreshing="ProductsListView_OnRefreshing"
+                  BackgroundColor="LightGray"
+                  SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="10" Padding="5" BackgroundColor="White">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="125" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="{Binding ImageUrl}" />
+                            <StackLayout Grid.Row="0" Grid.Column="1">
+                                <StackLayout  VerticalOptions="StartAndExpand">
+                                    <Label FontAttributes="Bold" Text="{Binding Name}" /> 
+                                    <Label TextColor="Goldenrod" Text="{Binding Rating, StringFormat='Rating: {0}/5'}" />
+                                    <Label Margin="0, 0, 0, 10" Text="{Binding Descriotion, StringFormat='Description: {0}'}" /> 
+                                </StackLayout>
+                                
+                                <StackLayout>
+                                    <Label TextColor="CadetBlue" FontAttributes="Bold" Text="{Binding Country}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label TextColor="CadetBlue" HorizontalOptions="StartAndExpand" Text="{Binding City}" />
+                                        <Label TextColor="Green" Text="{Binding Price, StringFormat='R{0:F2}/kg'}" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </ContentPage.Content>
 </ContentPage>
