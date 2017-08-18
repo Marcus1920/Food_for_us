@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="Client\GenericRestClient.cs" />
     <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="Model\Transaction.cs" />
     <Compile Include="ModelView\Class1.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\UsersModel.cs" />

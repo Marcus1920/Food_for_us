@@ -7,8 +7,34 @@
         <ListView x:Name="TransactionsListView"
                   HasUnevenRows="True"
                   IsPullToRefreshEnabled="True"
-                  Refreshing="TransactionsListView_OnRefreshing">
+                  Refreshing="TransactionsListView_OnRefreshing"
+                  BackgroundColor="LightGray"
+                  SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="0, 5, 0, 5" Padding="5" BackgroundColor="White">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
 
+                            <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="{Binding CustomerImageUrl}" />
+                            <StackLayout Grid.Row="0" Grid.Column="1">
+                                <StackLayout>
+                                    <Label FontAttributes="Bold" Text="{Binding CustomerName}" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label HorizontalOptions="StartAndExpand" Text="{Binding Description}" />
+                                        <Label TextColor="Green" IsVisible="{Binding IsComplete}" Text="Completed" />
+                                        <Label TextColor="Orange" IsVisible="{Binding IsInProgress}" Text="In Progress" />
+                                    </StackLayout>
+                                    <Label TextColor="CadetBlue" Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </ContentPage.Content>
 </ContentPage>
