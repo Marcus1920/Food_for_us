@@ -41,13 +41,13 @@
                     Factor=1,
                     Constant=-15}">
 
-                <Grid Margin="25" RowSpacing="0">
+                <Grid Margin="25" RowSpacing="2.5">
                     <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -79,6 +79,7 @@
                 Text="ACTIONS"
                 TextColor="White"
                 BackgroundColor="SteelBlue"
+                Clicked="Button_OnClicked"
                 RelativeLayout.XConstraint="{ConstraintExpression
                     Type=RelativeToView,
                     ElementName=DetailsLayout,
