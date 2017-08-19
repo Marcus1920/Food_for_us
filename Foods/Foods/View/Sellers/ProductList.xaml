@@ -25,7 +25,7 @@
                                 <StackLayout  VerticalOptions="StartAndExpand">
                                     <Label FontAttributes="Bold" Text="{Binding Name}" /> 
                                     <Label TextColor="Goldenrod" Text="{Binding Rating, StringFormat='Rating: {0}/5'}" />
-                                    <Label Margin="0, 0, 0, 10" Text="{Binding Descriotion, StringFormat='Description: {0}'}" /> 
+                                    <Label Margin="0, 0, 0, 10" Text="{Binding Description, StringFormat='Description: {0}'}" /> 
                                 </StackLayout>
                                 
                                 <StackLayout>

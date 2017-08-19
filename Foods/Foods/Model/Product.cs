@@ -5,7 +5,7 @@ namespace Foods.Model
     public class Product
     {
         public String Name { get; set; }
-        public string Descriotion { get; set; }
+        public string Description { get; set; }
         public double Rating { get; set; }
         public double Price { get; set; }
         public string Country { get; set; }

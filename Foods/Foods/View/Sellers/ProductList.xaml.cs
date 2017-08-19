@@ -43,7 +43,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Apples",
-                    Descriotion = "Farm fresh produce hand-picked from the best...",
+                    Description = "Farm fresh produce hand-picked from the best...",
                     Rating = 4.5,
                     Country = "South Africa",
                     City = "Knysna",
@@ -53,7 +53,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Bananas",
-                    Descriotion = "Nothing beats the taste...",
+                    Description = "Nothing beats the taste...",
                     Rating = 5,
                     Country = "South Africa",
                     City = "Knysna",
@@ -63,7 +63,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Oranges",
-                    Descriotion = "Fine selection...",
+                    Description = "Fine selection...",
                     Rating = 3,
                     Country = "Knysna",
                     City = "Cape Town",
@@ -73,7 +73,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Grapes",
-                    Descriotion = "The best of the Cape...",
+                    Description = "The best of the Cape...",
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
@@ -83,7 +83,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Mixed Fruit",
-                    Descriotion = "Fine selection...",
+                    Description = "Fine selection...",
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
@@ -93,7 +93,7 @@ namespace Foods.View.Sellers
                 new Product
                 {
                     Name = "Oranges",
-                    Descriotion = "Fine selection...",
+                    Description = "Fine selection...",
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
