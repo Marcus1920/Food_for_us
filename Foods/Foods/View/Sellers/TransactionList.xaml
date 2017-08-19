@@ -10,7 +10,8 @@
                   IsPullToRefreshEnabled="True"
                   Refreshing="TransactionsListView_OnRefreshing"
                   BackgroundColor="LightGray"
-                  SeparatorVisibility="None">
+                  SeparatorVisibility="None"
+                  ItemSelected="TransactionsListView_OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

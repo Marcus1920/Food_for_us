@@ -1,6 +1,7 @@
 ﻿using Foods.Model;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,6 +21,17 @@ namespace Foods.View.Sellers
         {
             TransactionsListView.ItemsSource = GetDummyList();
             TransactionsListView.EndRefresh();
+        }
+
+        private async Task TransactionsListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var transaction = e.SelectedItem as Transaction;
+            await Navigation.PushAsync(new TransactionDetails(transaction));
+
+            TransactionsListView.SelectedItem = null;
         }
 
         List<Transaction> GetDummyList()

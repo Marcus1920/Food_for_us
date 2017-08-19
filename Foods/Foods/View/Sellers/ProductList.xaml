@@ -9,7 +9,8 @@
                   IsPullToRefreshEnabled="True"
                   Refreshing="ProductsListView_OnRefreshing"
                   BackgroundColor="LightGray"
-                  SeparatorVisibility="None">
+                  SeparatorVisibility="None"
+                  ItemSelected="ProductsListView_OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

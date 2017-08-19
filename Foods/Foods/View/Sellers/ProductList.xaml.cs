@@ -1,6 +1,7 @@
 ﻿using Foods.Model;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,6 +21,19 @@ namespace Foods.View.Sellers
         {
             ProductsListView.ItemsSource = GetDummyList();
             ProductsListView.EndRefresh();
+        }
+
+
+
+        private async Task ProductsListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var product = e.SelectedItem as Product;
+            await Navigation.PushAsync(new ProductDetails(product));
+
+            ProductsListView.SelectedItem = null;
         }
 
         List<Product> GetDummyList()
