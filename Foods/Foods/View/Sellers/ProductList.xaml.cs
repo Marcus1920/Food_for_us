@@ -47,7 +47,7 @@ namespace Foods.View.Sellers
                     Rating = 4.5,
                     Country = "South Africa",
                     City = "Knysna",
-                    ImageUrl = "b1.png",
+                    ImageUrl = "apples.png",
                     Price = 50
                 },
                 new Product
@@ -57,7 +57,17 @@ namespace Foods.View.Sellers
                     Rating = 5,
                     Country = "South Africa",
                     City = "Knysna",
-                    ImageUrl = "b1.png",
+                    ImageUrl = "bananas.png",
+                    Price = 30
+                },
+                new Product
+                {
+                    Name = "Cabbage",
+                    Description = "Nothing beats the taste...",
+                    Rating = 5,
+                    Country = "South Africa",
+                    City = "Knysna",
+                    ImageUrl = "cabbage.png",
                     Price = 30
                 },
                 new Product
@@ -65,9 +75,9 @@ namespace Foods.View.Sellers
                     Name = "Oranges",
                     Description = "Fine selection...",
                     Rating = 3,
-                    Country = "Knysna",
-                    City = "Cape Town",
-                    ImageUrl = "b1.png",
+                    Country = "South Africa",
+                    City = "Knysna",
+                    ImageUrl = "oranges2.jpg",
                     Price = 75
                 },
                 new Product
@@ -77,7 +87,17 @@ namespace Foods.View.Sellers
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
-                    ImageUrl = "b1.png",
+                    ImageUrl = "grapes.jpg",
+                    Price = 75
+                },
+                new Product
+                {
+                    Name = "Potatoes",
+                    Description = "The best of the Cape...",
+                    Rating = 3,
+                    Country = "South Africa",
+                    City = "Knysna",
+                    ImageUrl = "potatoes.png",
                     Price = 75
                 },
                 new Product
@@ -87,7 +107,7 @@ namespace Foods.View.Sellers
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
-                    ImageUrl = "b1.png",
+                    ImageUrl = "mixedfruit.jpg",
                     Price = 75
                 },
                 new Product
@@ -97,7 +117,7 @@ namespace Foods.View.Sellers
                     Rating = 3,
                     Country = "South Africa",
                     City = "Knysna",
-                    ImageUrl = "b1.png",
+                    ImageUrl = "oranges.jpg",
                     Price = 75
                 },
             };
