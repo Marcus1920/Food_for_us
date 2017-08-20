@@ -30,7 +30,7 @@ namespace Foods.view
                 await Navigation.PushModalAsync(new SellersMaster());
 
             else
-                await Navigation.PushAsync(new  Master());
+                await Navigation.PushModalAsync(new  Master());
         }
 
         private void LoginAs_OnSelectedIndexChanged(object sender, EventArgs e)

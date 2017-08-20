@@ -3,7 +3,7 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Foods.View.Sellers"
             x:Class="Foods.View.Sellers.SellersTabbedPage"
-            Title="Home">
+            Title="Food For Us">
     
     <!--Pages can be added as references or inline-->
     <local:ProductList />

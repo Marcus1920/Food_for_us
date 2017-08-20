@@ -23,7 +23,7 @@ namespace Foods.View.Sellers
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(page);
+            Detail.Navigation.PushAsync(page);
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;

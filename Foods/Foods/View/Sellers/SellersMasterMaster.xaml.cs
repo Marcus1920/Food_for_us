@@ -1,7 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,8 +27,9 @@ namespace Foods.View.Sellers
             {
                 MenuItems = new ObservableCollection<SellersMasterMenuItem>(new[]
                 {
-                    new SellersMasterMenuItem { Id = 0, Title = "Home", TargetType = typeof(SellersTabbedPage)},
-                    new SellersMasterMenuItem { Id = 1, Title = "Page 2", TargetType = typeof(SellersMasterDetail) }
+                    new SellersMasterMenuItem { Id = 0, Title = "Page 1", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 1, Title = "Page 2", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Page 3", TargetType = typeof(SellersMasterDetail) }
                 });
             }
 
