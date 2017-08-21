@@ -32,10 +32,5 @@ namespace Foods.View.Sellers
 
             MasterPage.ListView.SelectedItem = null;
         }
-
-        protected override bool OnBackButtonPressed()
-        {
-            return true;
-        }
     }
 }

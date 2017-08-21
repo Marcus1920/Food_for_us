@@ -10,7 +10,7 @@
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
       <ListView.Header>
-        <Grid BackgroundColor="#03A9F4">
+        <Grid BackgroundColor="LightSteelBlue">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
@@ -30,13 +30,13 @@
             WidthRequest="150"
             HeightRequest="150"
             Aspect="AspectFill"
-            Source="ic_perm_identity.png"/>
+            Source="babalo2.jpg"/>
         <Label
             Grid.Column="1"
             Grid.Row="2"
             HorizontalOptions="Center"
-            Text="Username"
-            TextColor="White"
+            Text="Profile 1"
+            TextColor="SteelBlue"
             Style="{DynamicResource SubtitleStyle}"/>
         </Grid>
       </ListView.Header>
@@ -52,6 +52,16 @@
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
+        <ListView.Footer>
+            <StackLayout
+                Margin="15"
+                Spacing="0">
+                
+                <Label FontAttributes="Bold" FontFamily="Arial" FontSize="30" TextColor="CadetBlue" Text="Food" />
+                <Label Margin="0, 0, 0, 5" FontSize="20" TextColor="CadetBlue" Text="For us" />
+                <Label FontSize="20" Text="V1.0" />
+            </StackLayout>
+        </ListView.Footer>
     </ListView>
   </StackLayout>
 </ContentPage>

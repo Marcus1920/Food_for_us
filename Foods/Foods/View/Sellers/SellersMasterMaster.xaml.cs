@@ -28,9 +28,13 @@ namespace Foods.View.Sellers
             {
                 MenuItems = new ObservableCollection<SellersMasterMenuItem>(new[]
                 {
-                    new SellersMasterMenuItem { Id = 0, Title = "Page 1", TargetType = typeof(SellersMasterDetail) },
-                    new SellersMasterMenuItem { Id = 1, Title = "Page 2", TargetType = typeof(SellersMasterDetail) },
-                    new SellersMasterMenuItem { Id = 3, Title = "Page 3", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 0, Title = "Edit profile", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 1, Title = "History", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Donate", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Transactions", TargetType = typeof(TransactionList) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Settings", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Public Wall", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Help", TargetType = typeof(SellersMasterDetail) },
                     new SellersMasterMenuItem { Id = 3, Title = "Logout", TargetType = typeof(Login) }
                 });
             }
