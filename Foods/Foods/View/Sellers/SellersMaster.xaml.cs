@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,10 +22,20 @@ namespace Foods.View.Sellers
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail.Navigation.PushAsync(page);
+            if (item.Title.Equals("Logout"))
+                Navigation.PopModalAsync();
+
+            else
+                Detail.Navigation.PushAsync(page);
+
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }

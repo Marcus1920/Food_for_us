@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Foods.view;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
@@ -29,7 +30,8 @@ namespace Foods.View.Sellers
                 {
                     new SellersMasterMenuItem { Id = 0, Title = "Page 1", TargetType = typeof(SellersMasterDetail) },
                     new SellersMasterMenuItem { Id = 1, Title = "Page 2", TargetType = typeof(SellersMasterDetail) },
-                    new SellersMasterMenuItem { Id = 3, Title = "Page 3", TargetType = typeof(SellersMasterDetail) }
+                    new SellersMasterMenuItem { Id = 3, Title = "Page 3", TargetType = typeof(SellersMasterDetail) },
+                    new SellersMasterMenuItem { Id = 3, Title = "Logout", TargetType = typeof(Login) }
                 });
             }
 
