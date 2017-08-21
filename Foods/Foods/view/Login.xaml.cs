@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Foods.View.hometabs;
+using Foods.View;
 
 namespace Foods.view
 {
@@ -28,7 +29,7 @@ namespace Foods.view
 
         private async Task login_Clicked_1Async(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new  Master());
+            await Navigation.PushAsync(new  Register());
         }
     }
 }

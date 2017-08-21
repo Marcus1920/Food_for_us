@@ -17,9 +17,11 @@ namespace Foods.UWP
 {
     public sealed partial class MainPage
     {
+
         public MainPage()
         {
             this.InitializeComponent();
+            Xamarin.FormsMaps.Init("4dKvJB2XDN9iXnYBz7ih~G2PiBFmagzO7188fwcyOfw~ApKB1qVa5q9Qv8IPh_wEsV29rJgrEL2ekpWPWHwE5Pt7W7a0DZEUFwv6_cfoZLOy");
 
             LoadApplication(new Foods.App());
         }

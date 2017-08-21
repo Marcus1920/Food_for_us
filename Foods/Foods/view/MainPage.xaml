@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Foods"
              x:Class="Foods.MainPage"
-              BackgroundImage="b1.png">
+              BackgroundImage="login.png">
 
 
 

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Foods.View.Maps"
+            >
+
+
+    <ScrollView>
+        <StackLayout>
+            <Label  Text="{Binding Id}" />
+
+            <Label x:Name="revers" />
+
+
+            <Entry x:Name="EntyLatitude"
+                   Text="{Binding Latitude}"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="Latitude"
+                  
+                   />
+
+
+            <Entry x:Name="EntyLongitutde"
+                   Text="{Binding Longitude}"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="Longitude"
+                  
+                   />
+
+            <Entry x:Name="EntyAltitude"
+                   Text="{Binding Altitude}"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="Latitude"
+                  
+                   />
+
+
+            <Entry x:Name="EntyGeoLocation"
+                   Text="{Binding  GeoLocation}"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="Latitude"
+                   IsVisible="False"
+                  
+                   />
+            <Label Text="Note" />
+
+            <Editor  x:Name="EditorNote" 
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="100"
+                     Text="{Binding Notes}"
+           
+                   />
+
+            <StackLayout>
+<!--
+                <maps:Map
+                    x:Name="LocationMap"
+                    HeightRequest="480"
+                    WidthRequest="480"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    IsEnabled="True"
+                    IsVisible="True"
+                    MapType="Hybrid"
+                    HasScrollEnabled="True"
+                    HasZoomEnabled="True"
+                    
+                    >
+                    
+                    
+                    
+                </maps:Map>
+                -->
+            </StackLayout>
+
+        </StackLayout>
+
+    </ScrollView>
+
+    
+</ContentPage>

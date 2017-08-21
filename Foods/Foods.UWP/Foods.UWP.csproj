@@ -111,10 +111,15 @@
     <EmbeddedResource Include="Assets\back.jpg" />
     <Content Include="Assets\b1.png" />
     <Content Include="b1.png" />
+    <Content Include="dark-blue.png" />
+    <Content Include="grey.png" />
     <Content Include="ic_chat_bubble_outline.png" />
     <Content Include="ic_home.png" />
     <Content Include="ic_perm_identity.png" />
     <Content Include="ic_search.png" />
+    <Content Include="light-blue.png" />
+    <Content Include="login.png" />
+    <Content Include="orange.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />
