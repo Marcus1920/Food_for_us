@@ -23,7 +23,13 @@ namespace Foods.View.Sellers
             page.Title = item.Title;
 
             if (item.Title.Equals("Logout"))
-                Navigation.PopModalAsync();
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    if (await DisplayAlert("Logout?", "Are you sure you want to logout?", "Yes", "No"))
+                        await Navigation.PopModalAsync();
+                });
+            }
 
             else
                 Detail.Navigation.PushAsync(page);
