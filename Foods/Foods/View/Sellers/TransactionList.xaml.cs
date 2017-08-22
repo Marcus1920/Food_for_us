@@ -43,6 +43,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "babalo.jpg",
                     CustomerName = "Babalo Cetywa",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = true
                 },
@@ -51,6 +52,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "fellow.jpg",
                     CustomerName = "Fellow Mtshali",
                     Description = "5kg Oranges requested..",
+                    ProductImageUrl = "oranges.jpg",
                     Date = DateTime.Now.AddDays(-1).AddHours(+5),
                     IsComplete = false
                 },
@@ -59,6 +61,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "brian.jpg",
                     CustomerName = "Brian Thomas",
                     Description = "25kg Grapes requested..",
+                    ProductImageUrl = "grapes.jpg",
                     Date = DateTime.Now.AddDays(-4).AddHours(+3),
                     IsComplete = true
                 },
@@ -67,6 +70,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "marcus.jpg",
                     CustomerName = "Marcus Mbayo",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = true
                 },
@@ -75,6 +79,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "babalo.jpg",
                     CustomerName = "Babalo Cetywa",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = true
                 },
@@ -83,6 +88,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "olwethu.png",
                     CustomerName = "Olwethu Ngobese",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = false
                 },
@@ -91,6 +97,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "babalo.jpg",
                     CustomerName = "Babalo Cetywa",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = true
                 },
@@ -99,6 +106,7 @@ namespace Foods.View.Sellers
                     CustomerImageUrl = "babalo.jpg",
                     CustomerName = "Babalo Cetywa",
                     Description = "10kg Apples requested..",
+                    ProductImageUrl = "apples.jpg",
                     Date = DateTime.Now.AddDays(-2).AddHours(+3),
                     IsComplete = false
                 },
